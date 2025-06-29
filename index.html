@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio</title>
+  <!-- Google Fonts: Noto Sans JP -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome CDN for icons -->
+  <script src="https://kit.fontawesome.com/2b2e7b6e7b.js" crossorigin="anonymous"></script>
+  <!-- Simple Icons CDN for tech logos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v8/font/simple-icons.min.css">
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+    }
+    .pie {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: conic-gradient(#007AFF 0% 25%, #E5E5EA 25% 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin: 0 auto;
+    }
+    .pie-logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.2rem;
+      color: #111;
+      background: #fff;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px 0 #e5e5ea44;
+    }
+    .pie-label {
+      text-align: center;
+      margin-top: 0.5rem;
+      font-weight: 600;
+      color: #111;
+    }
+    .pie-level {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #007AFF;
+      font-weight: 500;
+    }
+  </style>
+  <!-- Google Analytics（ここにスクリプトを挿入） -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  -->
+</head>
+<body class="bg-white text-[#111111] min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-white/80 border-b border-[#E5E5EA] shadow-sm backdrop-blur">
+    <div class="max-w-5xl mx-auto flex justify-between items-center py-4 px-4">
+      <h1 class="text-2xl md:text-3xl font-bold text-[#007AFF] tracking-tight">My Portfolio</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="text-[#111111] hover:text-[#007AFF] font-medium transition">About</a>
+        <a href="#skills" class="text-[#111111] hover:text-[#007AFF] font-medium transition">Skills</a>
+        <a href="#works" class="text-[#111111] hover:text-[#007AFF] font-medium transition">Works</a>
+        <a href="#contact" class="text-[#111111] hover:text-[#007AFF] font-medium transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-4 md:px-0 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-[#007AFF] tracking-tight">About</h2>
+      <p class="text-base md:text-lg leading-relaxed">
+        東京都在住。大学二年生。<br>
+        塾のアルバイトにて、数学とプログラミング（Scratch）を教えています。<br>
+        音楽を聴くのが好きです。
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section (Dashboard風円グラフ) -->
+  <section id="skills" class="py-16 px-4 md:px-0 bg-[#F2F2F7]">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-[#007AFF] tracking-tight">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+        <!-- Python -->
+        <div>
+          <div class="pie" aria-label="Python 初級">
+            <span class="pie-logo"><i class="si si-python" title="Python" aria-label="Python"></i></span>
+          </div>
+          <div class="pie-label">Python</div>
+          <div class="pie-level">初級</div>
+        </div>
+        <!-- R -->
+        <div>
+          <div class="pie" aria-label="R 初級">
+            <span class="pie-logo"><i class="si si-r" title="R" aria-label="R"></i></span>
+          </div>
+          <div class="pie-label">R</div>
+          <div class="pie-level">初級</div>
+        </div>
+        <!-- SQL -->
+        <div>
+          <div class="pie" aria-label="SQL 初級">
+            <span class="pie-logo"><i class="si si-mysql" title="SQL" aria-label="SQL"></i></span>
+          </div>
+          <div class="pie-label">SQL</div>
+          <div class="pie-level">初級</div>
+        </div>
+        <!-- Figma -->
+        <div>
+          <div class="pie" aria-label="Figma 初級">
+            <span class="pie-logo"><i class="si si-figma" title="Figma" aria-label="Figma"></i></span>
+          </div>
+          <div class="pie-label">Figma</div>
+          <div class="pie-level">初級</div>
+        </div>
+        <!-- Blender -->
+        <div>
+          <div class="pie" aria-label="Blender 初級">
+            <span class="pie-logo"><i class="si si-blender" title="Blender" aria-label="Blender"></i></span>
+          </div>
+          <div class="pie-label">Blender</div>
+          <div class="pie-level">初級</div>
+        </div>
+      </div>
+      <div class="mt-6 text-sm text-gray-500">難易度: 入門 / <span class="text-[#007AFF] font-semibold">初級</span> / 中級 / 上級</div>
+    </div>
+  </section>
+
+  <!-- Works Section（3分の2幅・縦並び） -->
+  <section id="works" class="py-16 px-4 md:px-0 bg-white">
+    <div class="w-full md:w-2/3 mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-[#007AFF] tracking-tight">Works</h2>
+      <div class="flex flex-col gap-8">
+        <!-- 作品カード1 -->
+        <a href="work1.html" class="bg-[#F2F2F7] rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-row items-center gap-6 border border-[#E5E5EA] focus:outline-none focus:ring-2 focus:ring-[#007AFF]" tabindex="0">
+          <img src="https://placehold.jp/120x120.png?text=Coming+soon" alt="作品1 Coming soon" class="rounded-lg w-28 h-28 object-cover opacity-70 group-hover:opacity-100 transition" />
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-[#111111]">作品タイトル1</h3>
+            <p class="text-[#007AFF] font-medium">Coming soon</p>
+          </div>
+        </a>
+        <!-- 作品カード2 -->
+        <a href="work2.html" class="bg-[#F2F2F7] rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-row items-center gap-6 border border-[#E5E5EA] focus:outline-none focus:ring-2 focus:ring-[#007AFF]" tabindex="0">
+          <img src="https://placehold.jp/120x120.png?text=Coming+soon" alt="作品2 Coming soon" class="rounded-lg w-28 h-28 object-cover opacity-70 group-hover:opacity-100 transition" />
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-[#111111]">作品タイトル2</h3>
+            <p class="text-[#007AFF] font-medium">Coming soon</p>
+          </div>
+        </a>
+        <!-- 作品カード3 -->
+        <a href="work3.html" class="bg-[#F2F2F7] rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-row items-center gap-6 border border-[#E5E5EA] focus:outline-none focus:ring-2 focus:ring-[#007AFF]" tabindex="0">
+          <img src="https://placehold.jp/120x120.png?text=Coming+soon" alt="作品3 Coming soon" class="rounded-lg w-28 h-28 object-cover opacity-70 group-hover:opacity-100 transition" />
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-[#111111]">作品タイトル3</h3>
+            <p class="text-[#007AFF] font-medium">Coming soon</p>
+          </div>
+        </a>
+        <!-- 作品カード4 -->
+        <a href="work4.html" class="bg-[#F2F2F7] rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-row items-center gap-6 border border-[#E5E5EA] focus:outline-none focus:ring-2 focus:ring-[#007AFF]" tabindex="0">
+          <img src="https://placehold.jp/120x120.png?text=Coming+soon" alt="作品4 Coming soon" class="rounded-lg w-28 h-28 object-cover opacity-70 group-hover:opacity-100 transition" />
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-[#111111]">作品タイトル4</h3>
+            <p class="text-[#007AFF] font-medium">Coming soon</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 md:px-0 bg-[#F2F2F7]">
+    <div class="max-w-lg mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-[#007AFF] tracking-tight">Contact</h2>
+      <form class="bg-white rounded-xl shadow-md p-8 border border-[#E5E5EA]">
+        <label class="block text-sm font-medium text-[#111111] mb-1" for="name">お名前</label>
+        <input id="name" type="text" class="w-full border border-[#E5E5EA] rounded-lg py-2 px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-[#007AFF] transition" />
+
+        <label class="block text-sm font-medium text-[#111111] mb-1" for="email">メールアドレス</label>
+        <input id="email" type="email" class="w-full border border-[#E5E5EA] rounded-lg py-2 px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-[#007AFF] transition" />
+
+        <label class="block text-sm font-medium text-[#111111] mb-1" for="subject">題名</label>
+        <input id="subject" type="text" class="w-full border border-[#E5E5EA] rounded-lg py-2 px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-[#007AFF] transition" />
+
+        <label class="block text-sm font-medium text-[#111111] mb-1" for="message">メッセージ</label>
+        <textarea id="message" rows="5" class="w-full border border-[#E5E5EA] rounded-lg py-2 px-4 mb-6 focus:outline-none focus:ring-2 focus:ring-[#007AFF] transition"></textarea>
+
+        <button type="submit" class="bg-[#007AFF] text-white font-semibold py-2 px-6 rounded-xl shadow-sm hover:bg-blue-600 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#007AFF] transition w-full">
+          送信
+        </button>
+        <p class="text-xs text-gray-400 mt-2">※送信機能は未実装です。GitHub PagesではPHPは使えません。</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white/80 border-t border-[#E5E5EA] backdrop-blur">
+    <div class="max-w-5xl mx-auto py-6 px-4 flex flex-col md:flex-row items-center justify-between text-[#888888] text-sm">
+      <div class="mb-4 md:mb-0">&copy; 2025 My Portfolio. All rights reserved.</div>
+    </div>
+    
+  </footer>
+
+</body>
+</html>
