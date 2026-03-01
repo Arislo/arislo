@@ -1,44 +1,58 @@
-# portfolio
+# Portfolio (Vue + Vite)
 
-This template should help get you started developing with Vue 3 in Vite.
+このサイトは、フロントエンド開発とデータ分析を学ぶ Kohi の  
+ポートフォリオサイトです。Vue と Vite を用いて構築し、  
+自己紹介・スキル・制作物をシンプルにまとめています。
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🔗 URL
+https://portfolio-8lg.pages.dev/
 
-## Recommended Browser Setup
+---
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 🧑‍💻 About Me
+- 大学でフードデータサイエンスを専攻
+- R を用いたデータ分析（付加価値分析・レポート作成）
+- Web 制作では UI/UX と情報設計を重視
+- Figma → コーディング → デプロイまで一貫して制作
+- 音楽・読書が好き
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🛠 Tech Stack
 
-## Project Setup
+### Frontend
+- Vue 3  
+- Vite  
+- JavaScript  
+- CSS / Tailwind CSS  
 
-```sh
-npm install
-```
+### Data Science
+- R  
+- Python  
+- Excel  
 
-### Compile and Hot-Reload for Development
+### Tools
+- Git / GitHub  
+- Figma  
+- Cloudflare Pages  
 
-```sh
-npm run dev
-```
+---
 
-### Compile and Minify for Production
+## 🎨 Works
 
-```sh
-npm run build
-```
+### Portfolio（本サイト）
+Vue + Vite で構築した 1 ページ構成のポートフォリオ。
 
-### Lint with [ESLint](https://eslint.org/)
+### Arislo Blog
+Astro + Vite で制作したブログサイト。  
+https://arislo-blog.pages.dev/
 
-```sh
-npm run lint
-```
+### Py-R（データ分析サイト）
+Astro Starlight を用いたデータ分析学習サイト。  
+https://r-to-python.pages.dev/
+
+### こせのび（教育サービスデモ）
+Vue + Vite で制作した教育サービスのデモサイト。  
+https://kosenobi.pages.dev/
