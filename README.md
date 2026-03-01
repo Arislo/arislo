@@ -46,7 +46,7 @@ https://portfolio-8lg.pages.dev/
 ### Portfolio（本サイト）
 Vue + Vite で構築した 1 ページ構成のポートフォリオ。
 
-### Arislo Blog
+### Arislo Blog (ブログサイト)
 Astro + Vite で制作したブログサイト。  
 https://arislo-blog.pages.dev/
 
