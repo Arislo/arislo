@@ -14,7 +14,7 @@ https://portfolio-8lg.pages.dev/
 ## 🧑‍💻 About Me
 - 大学でフードデータサイエンスを専攻
 - R を用いたデータ分析（付加価値分析・レポート作成）
-- Web 制作では UI/UX と情報設計を重視
+- 個人Web 制作では UI/UX と情報設計を重視
 - Figma → コーディング → デプロイまで一貫して制作
 - 音楽・読書が好き
 
@@ -24,7 +24,8 @@ https://portfolio-8lg.pages.dev/
 
 ### Frontend
 - Vue 3  
-- Vite  
+- Vite
+- Astro
 - JavaScript  
 - CSS / Tailwind CSS  
 
